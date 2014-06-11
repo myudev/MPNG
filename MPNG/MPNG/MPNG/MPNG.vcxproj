@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{56A4BC82-97DF-4842-8FB7-4C906276B84D}</ProjectGuid>
+    <RootNamespace>SendBullet</RootNamespace>
+    <ProjectName>MPNG</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v90</PlatformToolset>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v90</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>C:\Users\trollin\Desktop\FeL- CCIT Plug-in\MPNG\MPNG\MPNG\lib\win32\zlib;C:\Users\trollin\Desktop\FeL- CCIT Plug-in\MPNG\MPNG\MPNG\lib\win32\pthreads;C:\Users\trollin\Desktop\FeL- CCIT Plug-in\MPNG\MPNG\MPNG\lib\win32\png++-0.2.5;C:\Users\trollin\Desktop\FeL- CCIT Plug-in\MPNG\MPNG\MPNG\lib\win32\libpng-1.2.51;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/D "_USING_V110_SDK71_" /D "_WINDLL" /EHsc /MT /c %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ModuleDefinitionFile>../mod.def</ModuleDefinitionFile>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>C:\Users\trollin\Desktop\0.3z - ADF\plugins\MPNG_Debug$(TargetExt)</OutputFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalOptions>/SAFESEH:NO %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ModuleDefinitionFile>../mod.def</ModuleDefinitionFile>
+      <OutputFile>Output\SendBullet$(TargetExt)</OutputFile>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\SDK\amxplugin.cpp" />
+    <ClCompile Include="lib\win32\libpng-1.2.51\png.c" />
+    <ClCompile Include="lib\win32\libpng-1.2.51\pngerror.c" />
+    <ClCompile Include="lib\win32\libpng-1.2.51\pnggccrd.c" />
+    <ClCompile Include="lib\win32\libpng-1.2.51\pngget.c" />
+    <ClCompile Include="lib\win32\libpng-1.2.51\pngmem.c" />
+    <ClCompile Include="lib\win32\libpng-1.2.51\pngpread.c" />
+    <ClCompile Include="lib\win32\libpng-1.2.51\pngread.c" />
+    <ClCompile Include="lib\win32\libpng-1.2.51\pngrio.c" />
+    <ClCompile Include="lib\win32\libpng-1.2.51\pngrtran.c" />
+    <ClCompile Include="lib\win32\libpng-1.2.51\pngrutil.c" />
+    <ClCompile Include="lib\win32\libpng-1.2.51\pngset.c" />
+    <ClCompile Include="lib\win32\libpng-1.2.51\pngtrans.c" />
+    <ClCompile Include="lib\win32\libpng-1.2.51\pngvcrd.c" />
+    <ClCompile Include="lib\win32\libpng-1.2.51\pngwio.c" />
+    <ClCompile Include="lib\win32\libpng-1.2.51\pngwrite.c" />
+    <ClCompile Include="lib\win32\libpng-1.2.51\pngwtran.c" />
+    <ClCompile Include="lib\win32\libpng-1.2.51\pngwutil.c" />
+    <ClCompile Include="lib\win32\pthreads\pthread.c" />
+    <ClCompile Include="lib\win32\zlib\adler32.c" />
+    <ClCompile Include="lib\win32\zlib\compress.c" />
+    <ClCompile Include="lib\win32\zlib\crc32.c" />
+    <ClCompile Include="lib\win32\zlib\deflate.c" />
+    <ClCompile Include="lib\win32\zlib\gzclose.c" />
+    <ClCompile Include="lib\win32\zlib\gzlib.c" />
+    <ClCompile Include="lib\win32\zlib\gzread.c" />
+    <ClCompile Include="lib\win32\zlib\gzwrite.c" />
+    <ClCompile Include="lib\win32\zlib\infback.c" />
+    <ClCompile Include="lib\win32\zlib\inffast.c" />
+    <ClCompile Include="lib\win32\zlib\inflate.c" />
+    <ClCompile Include="lib\win32\zlib\inftrees.c" />
+    <ClCompile Include="lib\win32\zlib\trees.c" />
+    <ClCompile Include="lib\win32\zlib\uncompr.c" />
+    <ClCompile Include="lib\win32\zlib\zutil.c" />
+    <ClCompile Include="src\BitStream.cpp" />
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\Manager.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="lib\win32\libpng-1.2.51\png.h" />
+    <ClInclude Include="lib\win32\libpng-1.2.51\pngconf.h" />
+    <ClInclude Include="lib\win32\png++-0.2.5\color.hpp" />
+    <ClInclude Include="lib\win32\png++-0.2.5\config.hpp" />
+    <ClInclude Include="lib\win32\png++-0.2.5\consumer.hpp" />
+    <ClInclude Include="lib\win32\png++-0.2.5\convert_color_space.hpp" />
+    <ClInclude Include="lib\win32\png++-0.2.5\end_info.hpp" />
+    <ClInclude Include="lib\win32\png++-0.2.5\error.hpp" />
+    <ClInclude Include="lib\win32\png++-0.2.5\ga_pixel.hpp" />
+    <ClInclude Include="lib\win32\png++-0.2.5\generator.hpp" />
+    <ClInclude Include="lib\win32\png++-0.2.5\gray_pixel.hpp" />
+    <ClInclude Include="lib\win32\png++-0.2.5\image.hpp" />
+    <ClInclude Include="lib\win32\png++-0.2.5\image_info.hpp" />
+    <ClInclude Include="lib\win32\png++-0.2.5\index_pixel.hpp" />
+    <ClInclude Include="lib\win32\png++-0.2.5\info.hpp" />
+    <ClInclude Include="lib\win32\png++-0.2.5\info_base.hpp" />
+    <ClInclude Include="lib\win32\png++-0.2.5\io_base.hpp" />
+    <ClInclude Include="lib\win32\png++-0.2.5\packed_pixel.hpp" />
+    <ClInclude Include="lib\win32\png++-0.2.5\palette.hpp" />
+    <ClInclude Include="lib\win32\png++-0.2.5\pixel_buffer.hpp" />
+    <ClInclude Include="lib\win32\png++-0.2.5\pixel_traits.hpp" />
+    <ClInclude Include="lib\win32\png++-0.2.5\png.hpp" />
+    <ClInclude Include="lib\win32\png++-0.2.5\reader.hpp" />
+    <ClInclude Include="lib\win32\png++-0.2.5\require_color_space.hpp" />
+    <ClInclude Include="lib\win32\png++-0.2.5\rgba_pixel.hpp" />
+    <ClInclude Include="lib\win32\png++-0.2.5\rgb_pixel.hpp" />
+    <ClInclude Include="lib\win32\png++-0.2.5\streaming_base.hpp" />
+    <ClInclude Include="lib\win32\png++-0.2.5\tRNS.hpp" />
+    <ClInclude Include="lib\win32\png++-0.2.5\types.hpp" />
+    <ClInclude Include="lib\win32\png++-0.2.5\writer.hpp" />
+    <ClInclude Include="lib\win32\pthreads\pthread.h" />
+    <ClInclude Include="lib\win32\zlib\crc32.h" />
+    <ClInclude Include="lib\win32\zlib\deflate.h" />
+    <ClInclude Include="lib\win32\zlib\gzguts.h" />
+    <ClInclude Include="lib\win32\zlib\inffast.h" />
+    <ClInclude Include="lib\win32\zlib\inffixed.h" />
+    <ClInclude Include="lib\win32\zlib\inflate.h" />
+    <ClInclude Include="lib\win32\zlib\inftrees.h" />
+    <ClInclude Include="lib\win32\zlib\trees.h" />
+    <ClInclude Include="lib\win32\zlib\zconf.h" />
+    <ClInclude Include="lib\win32\zlib\zlib.h" />
+    <ClInclude Include="lib\win32\zlib\zutil.h" />
+    <ClInclude Include="src\BitStream.h" />
+    <ClInclude Include="src\main.h" />
+    <ClInclude Include="src\Manager.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="lib\win32\zlib\zlib.map" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

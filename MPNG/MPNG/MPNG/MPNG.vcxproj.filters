@@ -1,0 +1,258 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\..\SDK\amxplugin.cpp" />
+    <ClCompile Include="src\BitStream.cpp" />
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\Manager.cpp" />
+    <ClCompile Include="lib\win32\libpng-1.2.51\png.c">
+      <Filter>PNG</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\win32\libpng-1.2.51\pngerror.c">
+      <Filter>PNG</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\win32\libpng-1.2.51\pnggccrd.c">
+      <Filter>PNG</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\win32\libpng-1.2.51\pngget.c">
+      <Filter>PNG</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\win32\libpng-1.2.51\pngmem.c">
+      <Filter>PNG</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\win32\libpng-1.2.51\pngpread.c">
+      <Filter>PNG</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\win32\libpng-1.2.51\pngread.c">
+      <Filter>PNG</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\win32\libpng-1.2.51\pngrio.c">
+      <Filter>PNG</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\win32\libpng-1.2.51\pngrtran.c">
+      <Filter>PNG</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\win32\libpng-1.2.51\pngrutil.c">
+      <Filter>PNG</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\win32\libpng-1.2.51\pngset.c">
+      <Filter>PNG</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\win32\libpng-1.2.51\pngtrans.c">
+      <Filter>PNG</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\win32\libpng-1.2.51\pngvcrd.c">
+      <Filter>PNG</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\win32\libpng-1.2.51\pngwio.c">
+      <Filter>PNG</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\win32\libpng-1.2.51\pngwrite.c">
+      <Filter>PNG</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\win32\libpng-1.2.51\pngwtran.c">
+      <Filter>PNG</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\win32\libpng-1.2.51\pngwutil.c">
+      <Filter>PNG</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\win32\pthreads\pthread.c">
+      <Filter>pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\win32\zlib\adler32.c">
+      <Filter>zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\win32\zlib\compress.c">
+      <Filter>zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\win32\zlib\crc32.c">
+      <Filter>zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\win32\zlib\deflate.c">
+      <Filter>zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\win32\zlib\gzclose.c">
+      <Filter>zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\win32\zlib\gzlib.c">
+      <Filter>zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\win32\zlib\gzread.c">
+      <Filter>zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\win32\zlib\gzwrite.c">
+      <Filter>zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\win32\zlib\infback.c">
+      <Filter>zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\win32\zlib\inffast.c">
+      <Filter>zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\win32\zlib\inflate.c">
+      <Filter>zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\win32\zlib\inftrees.c">
+      <Filter>zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\win32\zlib\trees.c">
+      <Filter>zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\win32\zlib\uncompr.c">
+      <Filter>zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\win32\zlib\zutil.c">
+      <Filter>zlib</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\BitStream.h" />
+    <ClInclude Include="src\main.h" />
+    <ClInclude Include="src\Manager.h" />
+    <ClInclude Include="lib\win32\png++-0.2.5\color.hpp">
+      <Filter>png++</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\win32\png++-0.2.5\config.hpp">
+      <Filter>png++</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\win32\png++-0.2.5\consumer.hpp">
+      <Filter>png++</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\win32\png++-0.2.5\convert_color_space.hpp">
+      <Filter>png++</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\win32\png++-0.2.5\end_info.hpp">
+      <Filter>png++</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\win32\png++-0.2.5\error.hpp">
+      <Filter>png++</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\win32\png++-0.2.5\ga_pixel.hpp">
+      <Filter>png++</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\win32\png++-0.2.5\generator.hpp">
+      <Filter>png++</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\win32\png++-0.2.5\gray_pixel.hpp">
+      <Filter>png++</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\win32\png++-0.2.5\image.hpp">
+      <Filter>png++</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\win32\png++-0.2.5\image_info.hpp">
+      <Filter>png++</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\win32\png++-0.2.5\index_pixel.hpp">
+      <Filter>png++</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\win32\png++-0.2.5\info.hpp">
+      <Filter>png++</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\win32\png++-0.2.5\info_base.hpp">
+      <Filter>png++</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\win32\png++-0.2.5\io_base.hpp">
+      <Filter>png++</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\win32\png++-0.2.5\packed_pixel.hpp">
+      <Filter>png++</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\win32\png++-0.2.5\palette.hpp">
+      <Filter>png++</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\win32\png++-0.2.5\pixel_buffer.hpp">
+      <Filter>png++</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\win32\png++-0.2.5\pixel_traits.hpp">
+      <Filter>png++</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\win32\png++-0.2.5\png.hpp">
+      <Filter>png++</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\win32\png++-0.2.5\reader.hpp">
+      <Filter>png++</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\win32\png++-0.2.5\require_color_space.hpp">
+      <Filter>png++</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\win32\png++-0.2.5\rgb_pixel.hpp">
+      <Filter>png++</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\win32\png++-0.2.5\rgba_pixel.hpp">
+      <Filter>png++</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\win32\png++-0.2.5\streaming_base.hpp">
+      <Filter>png++</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\win32\png++-0.2.5\tRNS.hpp">
+      <Filter>png++</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\win32\png++-0.2.5\types.hpp">
+      <Filter>png++</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\win32\png++-0.2.5\writer.hpp">
+      <Filter>png++</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\win32\libpng-1.2.51\png.h">
+      <Filter>PNG</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\win32\libpng-1.2.51\pngconf.h">
+      <Filter>PNG</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\win32\pthreads\pthread.h">
+      <Filter>pthreads</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\win32\zlib\crc32.h">
+      <Filter>zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\win32\zlib\deflate.h">
+      <Filter>zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\win32\zlib\gzguts.h">
+      <Filter>zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\win32\zlib\inffast.h">
+      <Filter>zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\win32\zlib\inffixed.h">
+      <Filter>zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\win32\zlib\inflate.h">
+      <Filter>zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\win32\zlib\inftrees.h">
+      <Filter>zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\win32\zlib\trees.h">
+      <Filter>zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\win32\zlib\zconf.h">
+      <Filter>zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\win32\zlib\zlib.h">
+      <Filter>zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\win32\zlib\zutil.h">
+      <Filter>zlib</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="PNG">
+      <UniqueIdentifier>{70ea663f-38a9-437d-9251-055f9dc27d10}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="png++">
+      <UniqueIdentifier>{0f4fbb29-7007-43b6-9f67-b4bdd5a4c077}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="pthreads">
+      <UniqueIdentifier>{da4b0eab-3151-43d5-bce8-fbf40efc8307}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="zlib">
+      <UniqueIdentifier>{cb5fd7f1-5e41-4e6d-bf85-d259ef87d732}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="lib\win32\zlib\zlib.map">
+      <Filter>zlib</Filter>
+    </None>
+  </ItemGroup>
+</Project>
